@@ -1,0 +1,13 @@
+name: Ci-cd
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+         - name: Checkout
+           uses: actions/checkout@v3
+
+         -  name: Build
+            run: echo "Building the project"
